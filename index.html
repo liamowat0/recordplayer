@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pixel Record Player</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="shelf" aria-label="Album shelf">
+      <button class="spine" data-album="Sundown Circuit">SUNDOWN CIRCUIT</button>
+      <button class="spine" data-album="Dust & Needles">DUST &amp; NEEDLES</button>
+      <button class="spine" data-album="Copper Echoes">COPPER ECHOES</button>
+      <button class="spine" data-album="Clay Horizon">CLAY HORIZON</button>
+      <button class="spine" data-album="Desert Pulse">DESERT PULSE</button>
+    </header>
+
+    <main>
+      <section class="desk" aria-label="Pixel art record player desk">
+        <div class="status-display" id="albumReadout">Select a hovering spine to read the album.</div>
+
+        <div class="player">
+          <div class="platter" id="platter" aria-hidden="true">
+            <div class="record">
+              <div class="label"></div>
+            </div>
+          </div>
+
+          <div class="tonearm-zone">
+            <div class="tonearm" id="tonearm" role="slider" aria-label="Move needle on or off record" aria-valuemin="0" aria-valuemax="1" aria-valuenow="0">
+              <div class="arm-head"></div>
+            </div>
+          </div>
+
+          <div class="controls">
+            <div class="control-block">
+              <p>Volume Dial</p>
+              <input id="volumeDial" class="volume" type="range" min="0" max="100" value="65" aria-label="Volume dial" />
+            </div>
+
+            <div class="control-block">
+              <p>Speed Click</p>
+              <div class="speed-group" role="group" aria-label="Playback speed">
+                <button class="speed-btn" data-speed="0.75">0.75x</button>
+                <button class="speed-btn active" data-speed="1">1.0x</button>
+                <button class="speed-btn" data-speed="1.25">1.25x</button>
+                <button class="speed-btn stop" data-speed="0">0</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
