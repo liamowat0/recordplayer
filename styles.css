@@ -1,44 +1,36 @@
-.game-style {
-    font-family: 'Press Start 2P', cursive;
-    color: #00FF00;
-    background-color: #000000;
-    border: 4px solid #FF00FF;
-    padding: 10px;
-    box-shadow: 0 0 20px rgba(0, 255, 0, 0.8);
+.container {
+  background-color: #C0C0C0; /* light grey */
+  color: #2F4F4F; /* dark grey */
+  font-family: 'Arial', sans-serif;
+  border: 2px solid #A9A9A9; /* grey */
 }
 
-.pixelated {
-    image-rendering: pixelated;
+header {
+  background-color: #87CEFA; /* light blue */
+  padding: 10px;
+  text-align: center;
+  color: white;
 }
 
-.neon {
-    text-shadow: 0 0 5px #00FF00, 0 0 10px #FF00FF, 0 0 15px #FFFF00;
-}
-
-body {
-    background: linear-gradient(to bottom, #0000FF, #0080FF);
-}
-
-h1, h2, h3 {
-    color: #FFFF00;
-    font-family: 'Press Start 2P', cursive;
-    text-transform: uppercase;
+h1 {
+  color: #4682B4; /* blue */
 }
 
 button {
-    background-color: #FF00FF;
-    border: none;
-    color: #FFFFFF;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 0;
-    transition: background-color 0.3s;
+  background-color: #98FB98; /* light green */
+  color: #2E8B57; /* green */
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
 }
 
 button:hover {
-    background-color: #FFFF00;
+  background-color: #8B4513; /* brown */
+  color: white;
+}
+
+.footer {
+  background-color: #B0C4DE; /* light steel blue */
+  padding: 10px;
+  text-align: center;
 }
